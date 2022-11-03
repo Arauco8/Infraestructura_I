@@ -49,14 +49,20 @@ while True:
         print("Ganaste, tijera corta papel")
     elif eligePc == "tijera" and eligeUsuario == "piedra":
         print("Ganaste, piedra pisa tijera")
-    elif eligeUsuario == "lagarto" and elijePc =="papel":
+    elif eligePc == "papel" and eligeUsuario =="lagarto":
         print("Ganaste, lagarto devora papel")
-    elif eligeUsuario == "lagarto" and elijePc =="spock":
+    elif eligePc == "spock" and eligeUsuario =="lagarto":
         print("Ganaste, lagarto envenena spock")  
-    elif eligeUsuario == "spock" and eligePc == "tijera":
+    elif eligePc == "tijera" and eligeUsuario == "spock":
         print("Ganaste, spock rompe tijera")
-    elif eligeUsuario =="spock" and eligePc == "piedra":
-        print("Ganaste, Spock vaporiza piedra")    
+    elif eligePc =="piedra" and eligeUsuario == "spock":
+        print("Ganaste, Spock vaporiza piedra")
+    elif eligePc == "spock" and  eligeUsuario== "papel":
+        print("Ganaste, papel desautoriza spock")    
+    elif eligePc == "lagarto" and  eligeUsuario== "tijera":
+        print("Ganaste, tijera decapita lagarto")
+    elif eligePc == "lagarto" and  eligeUsuario== "piedra":
+        print("Ganaste, piedra aplasta lagarto")    
         
     if eligeUsuario == "piedra" and eligePc == "papel":
         print("Perdiste, papel envuelve piedra")
@@ -64,14 +70,20 @@ while True:
         print("Perdiste, tijera corta papel")
     elif eligeUsuario == "tijera" and eligePc == "piedra":
         print("Perdiste, piedra pisa tijera")
+    elif eligeUsuario == "papel" and eligePc == "lagarto":
+        print("Perdiste, lagarto devora papel")
+    elif eligeUsuario == "spock" and eligePc == "lagarto":
+        print("Perdiste, lagarto envenena spock")
+    elif eligeUsuario == "tijera" and eligePc == "spock":
+        print("Perdiste, spock rompe tijera")
+    elif eligeUsuario == "piedra" and eligePc == "spock":
+        print("Perdiste, spock vaporiza piedra")
+    elif eligeUsuario == "spock" and eligePc == "papel":
+        print("Perdiste, papel desautoriza spock")
     elif eligeUsuario == "lagarto" and eligePc == "tijera":
         print("Perdiste, Tijera decapita Lagarto")
     elif eligeUsuario == "lagarto" and eligePc == "piedra":
         print("Perdiste, piedra aplasta lagarto")
-    elif eligeUsuario == "spock" and eligePc == "papel":
-        print("Perdiste, papel desautoriza spock")
-    elif eligeUsuario == "spock" and eligePc == "lagarto":
-        print("Perdiste, lagarto envenena spock")
     elif eligePc == eligeUsuario:
         print("Empate")
     again = input("Jugamos de nuevo? Si/No: ")
